@@ -1,0 +1,18 @@
+#!/usr/bin/python3
+
+
+class Person():
+    """constructor or initializer"""
+    def __init__(self, name):
+        """name is data field commonly known as
+        instance variables.
+        """
+        self.name = name
+
+    def whoami(self):
+        """method which returns a string"""
+        return ("You are " + self.name)
+
+    p1 = Person("ken")
+    print(p1.whoami())
+    print(p1.name)
